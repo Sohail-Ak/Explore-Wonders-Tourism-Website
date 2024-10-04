@@ -1,0 +1,522 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #cfe7e5; /* Light Teal background */
+  color: #213638; /* Dark Teal text */
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #213638;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5a13e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cfe7e5;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff; /* White header */
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+header .logo h1 {
+  color: #e5a13e; /* Golden for the logo */
+  text-align: center;
+  font-family: "Dancing Script", cursive; /* Corrected font family */
+  font-size: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #213638; /* Dark Teal for navigation links */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #e5a13e; /* Golden on hover */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #cfe7e5;
+  text-align: center;
+  padding: 175px 20px;
+  background-image: url("../assets/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #e5a13e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.hero-content .btn:hover {
+  background-color: #d28b34; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+/* Featured Attractions Section */
+.featured-attractions {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.featured-attractions h2 {
+  color: #213638;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.attractions-grid {
+  display: flex;
+  justify-content: center; /* Center align the cards */
+  gap: 20px; /* Equal gap between cards */
+  flex-wrap: wrap;
+}
+
+.attraction {
+  background-color: #cfe7e5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Fixed width for uniformity */
+  height: 400px; /* Fixed height for equal size */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  display: flex; /* Use flex to align items */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Evenly distribute space */
+}
+
+.attraction:hover {
+  transform: scale(1.05); /* Slightly scale on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.attraction img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.attraction h3 {
+  color: #213638;
+  margin-bottom: 10px;
+}
+
+.attraction p {
+  font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #213638;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+footer .social-links a:hover {
+  color: #e5a13e; /* Golden on hover */
+}
+
+/* Attractions Page Specific Styles */
+.attractions-overview {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.attractions-overview h2 {
+  color: #213638;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.attractions-overview p {
+  color: #213638;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Full-width Attraction Banners */
+.attraction-section {
+  margin: 0;
+  padding: 0;
+}
+
+.attraction-banner {
+  position: relative;
+  height: 400px;
+  border-radius: 100px;
+  margin: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.attraction-info {
+  background-color: rgba(33, 54, 56, 0.8); /* Dark teal transparent overlay */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.attraction-banner h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.attraction-banner p {
+  font-size: 1.1rem;
+}
+
+/* Specific banners */
+.attraction1 {
+  background-image: url("../assets/attraction1.jpg");
+}
+
+.attraction2 {
+  background-image: url("../assets/attraction2.jpg");
+}
+
+.attraction3 {
+  background-image: url("../assets/attraction3.jpg");
+}
+
+.attraction4 {
+  background-image: url("../assets/attraction4.jpg");
+}
+
+/* Hover effect */
+.attraction-banner:hover .attraction-info {
+  background-color: rgba(229, 161, 62, 0.8); /* Gold overlay on hover */
+}
+
+/* Accommodation Page Specific Styles */
+.accommodation-overview {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.accommodation-overview h2 {
+  color: #213638;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.accommodation-overview p {
+  color: #213638;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Filter Buttons */
+.filter-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background-color: #e5a13e;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Updated for better box-shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #d28b34;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Accommodation Listings */
+.accommodation-listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.accommodation-item {
+  background-color: #cfe7e5;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Updated for better box-shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.accommodation-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box-shadow transition on hover */
+}
+
+.accommodation-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.accommodation-details h3 {
+  color: #213638;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.accommodation-details .location {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.accommodation-details p {
+  font-size: 1rem;
+  color: #213638;
+  margin-bottom: 15px; /* Added more space between paragraphs */
+}
+
+.btn-book {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e5a13e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: auto; /* Added this to push the button to the bottom */
+  transition: background-color 0.3s ease; /* Added smooth transition for button */
+}
+
+.btn-book:hover {
+  background-color: #d28b34;
+}
+
+/* Travel Tips Accordion Section */
+.tips-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.tips-section h2 {
+  color: #213638;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #cfe7e5;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-button {
+  background-color: #e5a13e;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-button:hover {
+  background-color: #d28b34;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Accordion icon style */
+.accordion-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg); /* Rotate icon when accordion is active */
+}
+
+.accordion-content {
+  max-height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  font-size: 1rem;
+  color: #213638;
+}
+
+/* Active accordion state */
+.accordion-item.active .accordion-content {
+  max-height: 150px;
+  padding: 15px;
+}
+
+.accordion-item.active .accordion-button {
+  background-color: #d28b34;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #213638;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #213638;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #cfe7e5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #213638;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #e5a13e;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d28b34;
+}

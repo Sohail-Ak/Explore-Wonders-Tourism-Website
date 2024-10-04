@@ -5,11 +5,16 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Poppins", sans-serif;
   background-color: #cfe7e5; /* Light Teal background */
   color: #213638; /* Dark Teal text */
   line-height: 1.6;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Custom Scrollbar */
